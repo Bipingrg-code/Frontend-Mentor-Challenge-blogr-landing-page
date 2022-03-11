@@ -1,9 +1,61 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;300;400&family=Ubuntu:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header{
-    height: 50vh;
-    background-color: hsl(13, 100%, 72%);
+:root{
+    --font-family: 'Ubuntu', 'Overpass';
+    
+}
+header {
+  height: 60vh;
+  width: 100%;
+  background:hsl(13, 94%, 69%) url('../images/bg-pattern-intro-desktop.svg') no-repeat center;
+  background-size: cover;
+  padding-top: 30px;
+}
+nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  flex: 1;
+  padding:10px 40px;
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  position: relative;
+  margin: 0 20px 0 0;
+  font-size: 1em;
+  
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li ul {
+    margin-top: 8px;
+padding: 10px 0;
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(253, 252, 251);
+  float: left;
+}
+nav ul li ul li a{
+    color: black;
+}
+nav ul li ul li {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav ul li:hover ul {
+  display: block;
 }
