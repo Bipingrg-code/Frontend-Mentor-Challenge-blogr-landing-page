@@ -5,17 +5,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root{
-    --font-family: 'Ubuntu', 'Overpass';
-    
+:root {
+  --font-family: "Ubuntu", "Overpass";
+  --main-bg-color: white;
+  --main-color: hsl(355, 98%, 62%);
+  --second-color: hsl(356, 100%, 66%);
 }
+
+/*-----&&&---HEADER SECTION---&&&-----*/
 header {
   height: 60vh;
   width: 100%;
-  background:hsl(13, 94%, 69%) url('../images/bg-pattern-intro-desktop.svg') no-repeat center;
+  background: var(--main-color) url("../images/bg-pattern-intro-desktop.svg") no-repeat center;
   background-size: cover;
   padding-top: 30px;
 }
+
 nav {
   width: 80%;
   margin: auto;
@@ -24,7 +29,7 @@ nav {
 }
 nav ul {
   flex: 1;
-  padding:10px 40px;
+  padding: 10px 40px;
   display: flex;
 }
 nav ul li {
@@ -32,30 +37,62 @@ nav ul li {
   position: relative;
   margin: 0 20px 0 0;
   font-size: 1em;
-  
 }
 nav ul li a {
   text-decoration: none;
   color: white;
+  font-family: 'Ubuntu';
 }
-
 nav ul li ul {
-    margin-top: 8px;
-padding: 10px 0;
+  margin-top: 8px;
+  padding: 8px 0;
   display: none;
   position: absolute;
   left: 0;
-  background-color: rgb(253, 252, 251);
+  background-color: var(--main-bg-color);
   float: left;
+  border-radius: 4px;
 }
-nav ul li ul li a{
-    color: black;
+nav ul li ul li a {
+  color: black;
+  font-family: 'Ubuntu';
 }
 nav ul li ul li {
+  padding: 4px;
+  text-align: center;
   width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-
 nav ul li:hover ul {
   display: block;
+}
+.button{
+  padding: 10px 24px;
+}
+.button a{
+  text-decoration: none; 
+  font-size: 1em;
+  color: white;
+  font-family: 'Ubuntu','Overpass';
+}
+.button .btn-1, .btn-2{
+  border-radius: 18px;
+  border-style: none;
+  cursor: pointer;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  outline: 0;
+  line-height: 20px;
+  padding: 10px 24px;
+  transition: color 900ms;
+}
+.button .btn-2:hover, .button .btn-2:focus{
+  transition: .5s;
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
+}
+.button .btn-1:hover, .button .btn-1:focus{
+  transition: .5s;
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
 }
