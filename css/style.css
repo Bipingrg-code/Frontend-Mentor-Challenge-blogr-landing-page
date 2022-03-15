@@ -14,9 +14,10 @@
 
 /*-----&&&---HEADER SECTION---&&&-----*/
 header {
-  height: 60vh;
+  height: 80vh;
   width: 100%;
-  background: var(--main-color) url("../images/bg-pattern-intro-desktop.svg") no-repeat center;
+  background: var(--main-color) url("../images/bg-pattern-intro-desktop.svg")
+    no-repeat center;
   background-size: cover;
   padding-top: 30px;
 }
@@ -41,7 +42,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
 }
 nav ul li ul {
   margin-top: 8px;
@@ -54,8 +55,11 @@ nav ul li ul {
   border-radius: 4px;
 }
 nav ul li ul li a {
-  color: black;
-  font-family: 'Ubuntu';
+  color: rgb(68, 67, 67);
+  font-family: "Ubuntu";
+}
+nav ul li ul li a:hover{
+  color: #000;
 }
 nav ul li ul li {
   padding: 4px;
@@ -65,34 +69,61 @@ nav ul li ul li {
 nav ul li:hover ul {
   display: block;
 }
-.button{
+.button {
   padding: 10px 24px;
 }
-.button a{
-  text-decoration: none; 
+.button a {
+  text-decoration: none;
   font-size: 1em;
   color: white;
-  font-family: 'Ubuntu','Overpass';
+  font-family: "Ubuntu", "Overpass";
 }
-.button .btn-1, .btn-2{
+.button .btn-1,
+.btn-2 {
   border-radius: 18px;
-  border-style: none;
   cursor: pointer;
   font-weight: 500;
   height: 40px;
   line-height: 20px;
   outline: 0;
   line-height: 20px;
-  padding: 10px 24px;
+  padding: 10px 20px;
   transition: color 900ms;
 }
-.button .btn-2:hover, .button .btn-2:focus{
-  transition: .5s;
+.button .btn-2{
+ background-color: var(--main-bg-color);
+ color: var(--main-color);
+}
+.button .btn-2:hover,
+.button .btn-2:focus {
+  transition: 0.5s;
+  color: var(--main-bg-color);
+  background-color: var(--second-color);
+}
+.button .btn-1:hover,
+.button .btn-1:focus {
+  transition: 0.5s;
   color: var(--main-color);
   background-color: var(--main-bg-color);
 }
-.button .btn-1:hover, .button .btn-1:focus{
-  transition: .5s;
-  color: var(--main-color);
-  background-color: var(--main-bg-color);
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  line-height: 60px;
+  color: var(--main-bg-color);
+  font-family: var(--font-family);
+}
+.hero h1{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.hero p{
+  font-size: 1em;
+  font-weight: 300;
+}
+.btn-1.btn-more{
+  border: 1px solid var(--main-bg-color);
 }
