@@ -20,6 +20,7 @@ header {
     no-repeat center;
   background-size: cover;
   padding-top: 30px;
+  border-bottom-left-radius:50px;
 }
 
 nav {
@@ -58,7 +59,7 @@ nav ul li ul li a {
   color: rgb(68, 67, 67);
   font-family: "Ubuntu";
 }
-nav ul li ul li a:hover{
+nav ul li ul li a:hover {
   color: #000;
 }
 nav ul li ul li {
@@ -90,9 +91,9 @@ nav ul li:hover ul {
   padding: 10px 20px;
   transition: color 900ms;
 }
-.button .btn-2{
- background-color: var(--main-bg-color);
- color: var(--main-color);
+.button .btn-2 {
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
 }
 .button .btn-2:hover,
 .button .btn-2:focus {
@@ -106,7 +107,7 @@ nav ul li:hover ul {
   color: var(--main-color);
   background-color: var(--main-bg-color);
 }
-.hero{
+.hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,14 +117,14 @@ nav ul li:hover ul {
   color: var(--main-bg-color);
   font-family: var(--font-family);
 }
-.hero h1{
+.hero h1 {
   font-size: 2.5rem;
   font-weight: 500;
 }
-.hero p{
+.hero p {
   font-size: 1em;
   font-weight: 300;
 }
-.btn-1.btn-more{
+.btn-1.btn-more {
   border: 1px solid var(--main-bg-color);
 }
