@@ -15,12 +15,12 @@
 /*-----&&&---HEADER SECTION---&&&-----*/
 header {
   height: 80vh;
-  width: 100%;
+  max-width: 1440px;
   background: var(--main-color) url("../images/bg-pattern-intro-desktop.svg")
     no-repeat center;
   background-size: cover;
   padding-top: 30px;
-  border-bottom-left-radius:50px;
+  border-bottom-left-radius: 50px;
 }
 
 nav {
@@ -127,4 +127,42 @@ nav ul li:hover ul {
 }
 .btn-1.btn-more {
   border: 1px solid var(--main-bg-color);
+}
+
+/*-----&&&--START MAIN SECTION--&&&-----*/
+main {
+  background-color: #e7f8f8;
+  width: 100%;
+  color: hsl(208, 49%, 24%);
+  height: 80vh;
+  font-family: "Ubuntu";
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+main h3 {
+  line-height: 1.5em;
+}
+.container {
+  height: 400px;
+  display: flex;
+  width: 100%;
+}
+.left-section {
+  margin-left: 110px;
+}
+
+.right-section {
+  height: 100%;
+  width: 100%;
+}
+.right-section img {
+  height: 100%;
+  position: absolute;
+  top: 40px;
+  right: -140px;
+}
+.left-section span {
+  font-size: 1.5em;
+  font-weight: 500;
 }
