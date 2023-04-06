@@ -55,29 +55,36 @@ header {
 .right-nav {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
+
 .log-in,
 .sign-up {
-  padding: 8px 16px;
+  padding: 10px 16px;
   border-radius: 50px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1em;
-  line-height: 1.5;
   cursor: pointer;
 }
 .log-in {
   color: var(--main-text-color);
-  margin-right: 16px;
 }
 .log-in:hover {
-  color: var(--second-color);
+  border: 1px solid var(--main-text-color);
+  border-radius: 50px;
+  color: var(--main-text-color);
   transition: all 0.2s ease;
+  padding: 10px 16px;
 }
 .sign-up {
   border: 1px solid;
   background-color: var(--main-text-color);
   color: var(--second-color);
   transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .sign-up:hover {
   color: var(--main-color);
@@ -126,22 +133,27 @@ p {
 }
 .button {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 20px 0;
   height: 60px;
-  width: 310px;
+  width: 300px;
+  justify-content: space-between;
 }
 .start-free,
 .learn-more {
-  padding: 8px 16px;
+  padding: 10px 16px;
   border-radius: 50px;
   font-weight: 700;
   font-size: 1em;
-  line-height: 1.7;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .start-free {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid;
   background-color: var(--main-text-color);
   color: var(--second-color);
