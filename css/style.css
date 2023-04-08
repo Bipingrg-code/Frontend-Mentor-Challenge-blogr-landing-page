@@ -248,3 +248,13 @@ p {
 .mobile-image img {
   height: 100%;
 }
+
+/* Abinash CSS */
+
+.footer-section {
+  background: #404040;
+}
+
+.footer-section h2 {
+  color: #fff;
+}
