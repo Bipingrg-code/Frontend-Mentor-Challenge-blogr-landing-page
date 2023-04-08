@@ -255,6 +255,22 @@ p {
   background: #404040;
 }
 
-.footer-section h2 {
+.grid-container {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  text-align: center;
+  border-top-right-radius: 120px;
+}
+
+.grid-item1 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 30px;
   color: #fff;
+}
+
+.footer-section {
+  height: 40vh;
 }
