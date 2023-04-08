@@ -252,25 +252,48 @@ p {
 /* Abinash CSS */
 
 .footer-section {
-  background: #404040;
+  background: #24242c;
 }
 
 .grid-container {
   display: grid;
   column-gap: 50px;
   grid-template-columns: auto auto auto auto;
-  padding: 10px;
+  padding: 90px;
   text-align: center;
-  border-top-right-radius: 120px;
+  border-top-right-radius: 105px;
+  color: #fff;
+  font-size: 20px;
 }
 
 .grid-item1 {
   font-size: 40px;
   font-weight: 600;
-  padding-top: 30px;
-  color: #fff;
 }
 
 .footer-section {
-  height: 40vh;
+  height: 500px;
+}
+
+ul {
+  padding-top: 30px;
+  list-style: none;
+  color: #8a8b91;
+}
+
+.grid-item4 {
+  padding-right: 100px;
+}
+li {
+  padding: 10px;
+}
+.grid-item2,
+.grid-item3,
+.grid-item4 {
+  padding-top: 10px;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
 }
